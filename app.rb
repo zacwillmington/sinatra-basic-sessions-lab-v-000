@@ -6,5 +6,9 @@ class App < Sinatra::Base
         enable :sessions
         set :sessions_secret, "you shall never know"
     end
-    
+
+    get '/' do
+        erb :index
+    end
+
 end
